@@ -32,8 +32,8 @@ public class WebTablesExample {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("http://www.qaclickacademy.com");
 		driver.manage().deleteAllCookies();
+		driver.get("http://www.qaclickacademy.com");
 		System.out.println(driver.getTitle());
 		driver.findElement(By.cssSelector("a[href='practice.php']")).click();
 		String PracticePageTitle = driver.getTitle();
